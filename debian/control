@@ -1,0 +1,77 @@
+Source: rust-serde-json
+Section: rust
+Priority: optional
+Build-Depends: debhelper (>= 12),
+ dh-cargo (>= 25),
+ cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-itoa-1+default-dev <!nocheck>,
+ librust-ryu-1+default-dev <!nocheck>,
+ librust-serde-1+std-dev (>= 1.0.100-~~) <!nocheck>,
+ librust-serde-1-dev (>= 1.0.100-~~) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ kpcyrd <git@rxv.cc>,
+ Wolfgang Silbermayr <wolfgang@silbermayr.at>
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-json]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/serde-json
+X-Cargo-Crate: serde_json
+Rules-Requires-Root: no
+
+Package: librust-serde-json-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-indexmap-1+default-dev (>= 1.5.2-~~),
+ librust-indexmap-1+std-dev (>= 1.5.2-~~),
+ librust-itoa-1+default-dev,
+ librust-ryu-1+default-dev,
+ librust-serde-1+alloc-dev (>= 1.0.100-~~),
+ librust-serde-1+std-dev (>= 1.0.100-~~),
+ librust-serde-1-dev (>= 1.0.100-~~)
+Provides:
+ librust-serde-json+alloc-dev (= ${binary:Version}),
+ librust-serde-json+arbitrary-precision-dev (= ${binary:Version}),
+ librust-serde-json+default-dev (= ${binary:Version}),
+ librust-serde-json+float-roundtrip-dev (= ${binary:Version}),
+ librust-serde-json+indexmap-dev (= ${binary:Version}),
+ librust-serde-json+preserve-order-dev (= ${binary:Version}),
+ librust-serde-json+raw-value-dev (= ${binary:Version}),
+ librust-serde-json+std-dev (= ${binary:Version}),
+ librust-serde-json+unbounded-depth-dev (= ${binary:Version}),
+ librust-serde-json-1-dev (= ${binary:Version}),
+ librust-serde-json-1+alloc-dev (= ${binary:Version}),
+ librust-serde-json-1+arbitrary-precision-dev (= ${binary:Version}),
+ librust-serde-json-1+default-dev (= ${binary:Version}),
+ librust-serde-json-1+float-roundtrip-dev (= ${binary:Version}),
+ librust-serde-json-1+indexmap-dev (= ${binary:Version}),
+ librust-serde-json-1+preserve-order-dev (= ${binary:Version}),
+ librust-serde-json-1+raw-value-dev (= ${binary:Version}),
+ librust-serde-json-1+std-dev (= ${binary:Version}),
+ librust-serde-json-1+unbounded-depth-dev (= ${binary:Version}),
+ librust-serde-json-1.0-dev (= ${binary:Version}),
+ librust-serde-json-1.0+alloc-dev (= ${binary:Version}),
+ librust-serde-json-1.0+arbitrary-precision-dev (= ${binary:Version}),
+ librust-serde-json-1.0+default-dev (= ${binary:Version}),
+ librust-serde-json-1.0+float-roundtrip-dev (= ${binary:Version}),
+ librust-serde-json-1.0+indexmap-dev (= ${binary:Version}),
+ librust-serde-json-1.0+preserve-order-dev (= ${binary:Version}),
+ librust-serde-json-1.0+raw-value-dev (= ${binary:Version}),
+ librust-serde-json-1.0+std-dev (= ${binary:Version}),
+ librust-serde-json-1.0+unbounded-depth-dev (= ${binary:Version}),
+ librust-serde-json-1.0.87-dev (= ${binary:Version}),
+ librust-serde-json-1.0.87+alloc-dev (= ${binary:Version}),
+ librust-serde-json-1.0.87+arbitrary-precision-dev (= ${binary:Version}),
+ librust-serde-json-1.0.87+default-dev (= ${binary:Version}),
+ librust-serde-json-1.0.87+float-roundtrip-dev (= ${binary:Version}),
+ librust-serde-json-1.0.87+indexmap-dev (= ${binary:Version}),
+ librust-serde-json-1.0.87+preserve-order-dev (= ${binary:Version}),
+ librust-serde-json-1.0.87+raw-value-dev (= ${binary:Version}),
+ librust-serde-json-1.0.87+std-dev (= ${binary:Version}),
+ librust-serde-json-1.0.87+unbounded-depth-dev (= ${binary:Version})
+Description: JSON serialization file format - Rust source code
+ This package contains the source for the Rust serde_json crate, packaged by
+ debcargo for use with cargo and dh-cargo.
