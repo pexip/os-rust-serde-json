@@ -1,3 +1,9 @@
+rust-serde-json (1.0.87-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- Huw Jones <huw@pexip.com>  Fri, 17 Mar 2023 13:24:08 +0000
+
 rust-serde-json (1.0.87-1) unstable; urgency=medium
 
   * Team upload.

@@ -10,8 +10,9 @@ Build-Depends: debhelper (>= 12),
  librust-ryu-1+default-dev <!nocheck>,
  librust-serde-1+std-dev (>= 1.0.100-~~) <!nocheck>,
  librust-serde-1-dev (>= 1.0.100-~~) <!nocheck>
-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
-Uploaders:
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+XSBC-Pexip-Original-Uploaders:
  kpcyrd <git@rxv.cc>,
  Wolfgang Silbermayr <wolfgang@silbermayr.at>
 Standards-Version: 4.5.1
@@ -19,6 +20,7 @@ Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-json]
 Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/serde-json
 X-Cargo-Crate: serde_json
 Rules-Requires-Root: no
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bookworm
 
 Package: librust-serde-json-dev
 Architecture: any
