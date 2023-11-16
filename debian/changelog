@@ -1,3 +1,9 @@
+rust-serde-json (1.0.87-1pexip2) pexip-bookworm; urgency=medium
+
+  * Initial bookworm build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 16 Nov 2023 10:32:32 +0000
+
 rust-serde-json (1.0.87-1pexip1) pexip; urgency=medium
 
   * Prepare Pexip packaging
